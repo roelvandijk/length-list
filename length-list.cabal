@@ -1,0 +1,23 @@
+name:                length-list
+version:             0.1
+cabal-version:       >=1.6
+build-type:          Simple
+author:              Roel van Dijk <vandijk.roel@gmail.com>
+maintainer:          Roel van Dijk <vandijk.roel@gmail.com>
+copyright:           2011 Roel van Dijk
+license:             BSD3
+license-file:        LICENSE
+category:            Data Structures
+synopsis:            Lists paired with their length
+
+source-repository head
+  type:     git
+  location: git://github.com/roelvandijk/length-list.git
+
+library
+  hs-source-dirs: src
+  build-depends: base                 >= 3.0.3.1 && < 4.5
+               , base-unicode-symbols >= 0.2.2   && < 0.3
+               , deepseq              >= 1.1     && < 1.2
+  exposed-modules: Data.LList
+  ghc-options: -Wall
