@@ -9,6 +9,8 @@ license:             BSD3
 license-file:        LICENSE
 category:            Data Structures
 synopsis:            Lists paired with their length
+homepage:            http://github.com/roelvandijk/length-list
+bug-reports:         https://github.com/roelvandijk/length-list/issues
 
 source-repository head
   type:     git
