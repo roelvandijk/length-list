@@ -131,7 +131,8 @@ splitAt n l = (take n l, drop n l)
 --------------------------------------------------------------------------------
 
 instance (NFData α) ⇒ NFData (LList α) where
-    rnf (LList n xs) = rnf n `seq` rnf xs
+    rnf (LList _ xs) = rnf xs -- Note that the length is already evaluated
+                              -- since it has a strictness flag.
 
 instance Foldable LList where
     foldr  f z = L.foldr  f z ∘ toList
