@@ -4,7 +4,7 @@ module Data.LList
     ( LList
     , fromList
     , toList
-    , prepend
+    , cons
     , (++)
     , head
     , last
@@ -75,8 +75,8 @@ fromList xs = LList (fromIntegral $ L.length xs) xs
 toList ∷ LList α → [α]
 toList (LList _ xs) = xs
 
-prepend ∷ α → LList α → LList α
-prepend x (LList n xs) = LList (n + 1) (x : xs)
+cons ∷ α → LList α → LList α
+cons x (LList n xs) = LList (n + 1) (x : xs)
 
 (++) ∷ LList α → LList α → LList α
 (++) = mappend
