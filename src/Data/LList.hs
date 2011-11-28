@@ -45,7 +45,7 @@ import Data.Monoid         ( Monoid, mempty, mappend )
 import Data.Ord            ( Ord, compare, (<), min, max )
 import Data.Typeable       ( Typeable )
 import Prelude             ( Num, (+), (-)
-                           , fromIntegral, error, seq )
+                           , fromIntegral, error )
 import Text.Show           ( Show )
 
 -- from base-unicode-symbols:
